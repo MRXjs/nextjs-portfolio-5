@@ -27,18 +27,22 @@ const aboutData = [
       {
         title: "Web Development",
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          <FaHtml5 key={""} />,
+          <FaCss3 key={""} />,
+          <FaJs key={""} />,
+          <FaReact key={""} />,
+          <SiNextdotjs key={""} />,
+          <SiFramer key={""} />,
+          <FaWordpress key={""} />,
         ],
       },
       {
         title: "UI/UX Design",
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [
+          <FaFigma key={""} />,
+          <SiAdobexd key={""} />,
+          <SiAdobephotoshop key={""} />,
+        ],
       },
     ],
   },
@@ -124,9 +128,9 @@ const About = () => {
             exit={"hidden"}
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            10 years ago, I began freelancing as a developer. Since then I've
+            {`10 years ago, I began freelancing as a developer. Since then I've
             done remote work for agencies consulted for startups, and
-            collaborated on digital products for business and consumer use.
+            collaborated on digital products for business and consumer use.`}
           </motion.p>
           <motion.div
             variants={fadeIn("right", 0.6)}
